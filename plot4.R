@@ -12,10 +12,7 @@ TidyDataset<-data[,c(ncol(data),1:(ncol(data)-1))] #reorder de dataframe
 ####3###
 png(file="plot4.png",width = 480,height = 480)
 library(datasets)
-par(mfrow=c(2,2))
-
-      
-      
+par(mfrow=c(2,2))     
       with(TidyDataset,plot(DATE,Global_active_power,type = "l",ylab = "Global Active Power (kilowatts)",xlab = ""))
       ##2##
       with(TidyDataset,plot(DATE,Voltage,type = "l",ylab = "Voltage",xlab = "datetime"))
